@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'core/translation/translation_keys.dart';
 import 'ui/page/page_home.dart';
 
 class MyApp extends StatelessWidget {
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      locale: const Locale('en', 'US'),
+      fallbackLocale: const Locale('pt', 'BR'),
+      translations: TranslationKeys(),
       getPages: [
         GetPage(
           name: '/',
