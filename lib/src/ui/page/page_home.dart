@@ -15,11 +15,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('title'.tr),
       ),
-      body: const Center(
+      body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Lista de Usuários'),
+          Text('hello'.trParams({'name': 'Flutter'})),
           // Obx(() => Text(controller.user.value.name)),
         ],
       )),
