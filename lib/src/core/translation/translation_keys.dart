@@ -9,6 +9,8 @@ class TranslationKeys extends Translations {
           'welcome': 'Welcome',
           'hello': 'Hello @name',
           'name': ' Name',
+          'user_list_title_simple': '@total user',
+          'user_list_title_plural': '@total Users',
         },
         'pt_BR': {
           'title': 'GetX Internacionalização',
@@ -16,6 +18,8 @@ class TranslationKeys extends Translations {
           'welcome': 'Bem-vindo',
           'hello': 'Olá @name',
           'name': 'Nome',
+          'user_list_title_simple': '@total Usuário',
+          'user_list_title_plural': '@total Usuários',
         },
       };
 }

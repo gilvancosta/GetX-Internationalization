@@ -20,6 +20,23 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('hello'.trParams({'name': 'Flutter'})),
+          const SizedBox(height: 20),
+          Text('user_list_title_simple'.trPluralParams('user_list_title_plural', 1, {'total': '1'})),
+          Text('user_list_title_simple'.trPluralParams('user_list_title_plural', 2, {'total': '2'})),
+          const SizedBox(height: 20),
+          ElevatedButton(
+              onPressed: () {
+                Get.updateLocale(const Locale('pt', 'BR'));
+              },
+              child: const Text('Portuguese')),
+
+          const SizedBox(height: 20),
+          ElevatedButton(
+              onPressed: () {
+                Get.updateLocale(const Locale('en', 'US'));
+              },
+              child: const Text('English')),
+
           // Obx(() => Text(controller.user.value.name)),
         ],
       )),
