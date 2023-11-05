@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import "package:flutter/material.dart";
+import "package:get/get.dart";
+
+import "../../core/translation/translation_keys.dart";
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,29 +15,32 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('title'.tr),
+        title: Text(TranslationKey.titleApp.tr),
       ),
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('hello'.trParams({'name': 'Flutter'})),
+          Text("hello".trParams({"name": "Flutter"})),
           const SizedBox(height: 20),
-          Text('user_list_title_simple'.trPluralParams('user_list_title_plural', 1, {'total': '1'})),
-          Text('user_list_title_simple'.trPluralParams('user_list_title_plural', 2, {'total': '2'})),
+          Text("userListTitleSimple"
+              .trPluralParams("userListTitlePlural", 1, {"total": "1"})),
+
+          Text("userListTitleSimple"
+              .trPluralParams("userListTitlePlural", 2, {"total": "2"})),
           const SizedBox(height: 20),
           ElevatedButton(
               onPressed: () {
-                Get.updateLocale(const Locale('pt', 'BR'));
+                Get.updateLocale(const Locale("pt", "BR"));
               },
-              child: const Text('Portuguese')),
+              child: const Text("Portuguese")),
 
           const SizedBox(height: 20),
           ElevatedButton(
               onPressed: () {
-                Get.updateLocale(const Locale('en', 'US'));
+                Get.updateLocale(const Locale("en", "US"));
               },
-              child: const Text('English')),
+              child: const Text("English")),
 
           // Obx(() => Text(controller.user.value.name)),
         ],

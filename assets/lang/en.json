@@ -1,0 +1,9 @@
+{
+  "Internacionalization": "GetX Internacionalization",
+  "users": "Users List",
+  "welcome": "Welcome",
+  "hello": "Hello @name",
+  "name": " Name",
+  "userListTitleSimple": "@total user",
+  "userListTitlePlural": "@total Users"
+}

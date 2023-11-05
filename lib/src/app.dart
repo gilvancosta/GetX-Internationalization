@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'core/translation/translation_keys.dart';
-import 'ui/page/page_home.dart';
+import "package:flutter/material.dart";
+import "package:get/get.dart";
+import "core/translation/translation_keys.dart";
+import "ui/page/page_home.dart";
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,18 +9,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: "Flutter Demo",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      locale: const Locale('en', 'US'),
-      fallbackLocale: const Locale('pt', 'BR'),
+      locale: const Locale("en", "US"),
+      fallbackLocale: const Locale("pt", "BR"),
       translations: TranslationKeys(),
       getPages: [
         GetPage(
-          name: '/',
+          name: "/",
           // binding: BindingsBuilder.put(() => UserController(userRepository: Get.find())),
           page: () => const HomePage(),
         ),
