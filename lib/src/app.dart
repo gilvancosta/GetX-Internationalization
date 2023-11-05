@@ -1,9 +1,15 @@
 import "package:flutter/material.dart";
 import "package:get/get.dart";
+
+
 import "core/translation/translation_keys.dart";
 import "ui/page/page_home.dart";
 
-class MyApp extends StatelessWidget {
+
+
+class MyApp extends StatelessWidget  {
+ 
+
   const MyApp({super.key});
 
   @override
