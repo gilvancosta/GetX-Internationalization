@@ -1,9 +1,9 @@
 {
-  "titleApp": "GetX Internacionalization",
+  "titleApp": "GetX Internationalization",
   "users": "Users List",
   "welcome": "Welcome",
   "hello": "Hello @name",
-  "name": " Name",
+  "name": "Name",
   "userListTitleSimple": "@total user",
   "userListTitlePlural": "@total Users"
 }

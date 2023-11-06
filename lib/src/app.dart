@@ -1,16 +1,13 @@
 import "package:flutter/material.dart";
 import "package:get/get.dart";
 
+import "../main.dart";
 
-import "core/translation/translation_keys.dart";
 import "ui/page/page_home.dart";
 
-
-
-class MyApp extends StatelessWidget  {
- 
-
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +20,7 @@ class MyApp extends StatelessWidget  {
       ),
       locale: const Locale("en", "US"),
       fallbackLocale: const Locale("pt", "BR"),
-      translations: TranslationKeys(),
+      translations: translationKeys,
       getPages: [
         GetPage(
           name: "/",

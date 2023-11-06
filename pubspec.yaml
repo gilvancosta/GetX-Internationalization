@@ -25,5 +25,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/translations/en_US.json
-    - assets/translations/pt_BR.json
+    - assets/translations/

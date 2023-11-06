@@ -19,11 +19,14 @@ class _HomePageState extends State<HomePage> {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          //  Text("hello".trParams({"name": "Flutter"})),
+          Text("hello".trParams({"name": "Flutter"})),
           const SizedBox(height: 20),
-          // Text("userListTitleSimple" .trPluralParams("userListTitlePlural", 1, {"total": "1"})),
 
-          //  Text("userListTitleSimple" .trPluralParams("userListTitlePlural", 2, {"total": "2"})),
+          Text("userListTitleSimple"
+              .trPluralParams("userListTitlePlural", 1, {"total": "1"})),
+
+          Text("userListTitleSimple"
+              .trPluralParams("userListTitlePlural", 2, {"total": "2"})),
           const SizedBox(height: 20),
           ElevatedButton(
               onPressed: () {

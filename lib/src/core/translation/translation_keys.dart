@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import "dart:convert";
 
 import "package:flutter/services.dart";
@@ -10,7 +12,6 @@ class TranslationKeys extends Translations {
   Future<void> load() async {
     ptKeys = Map<String, String>.from(jsonDecode(
         await rootBundle.loadString("assets/translations/pt_BR.json")));
-
     enKeys = Map<String, String>.from(jsonDecode(
         await rootBundle.loadString("assets/translations/en_US.json")));
   }
